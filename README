@@ -1,9 +1,8 @@
-This is a multi-threaded CPU miner for Litecoin and Bitcoin,
+This is a multi-threaded CPU miner for YbCoin.
 fork of Jeff Garzik's reference cpuminer.
 
 License: GPLv2.  See COPYING for details.
 
-Downloads:  https://sourceforge.net/projects/cpuminer/files/
 Git tree:   https://github.com/pooler/cpuminer
 
 Dependencies:

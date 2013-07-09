@@ -19,7 +19,9 @@
 #include <sys/time.h>
 #include <time.h>
 #ifdef WIN32
+ #ifndef __MINGW64__
 #include <windows.h>
+ #endif
 #else
 #include <errno.h>
 #include <signal.h>

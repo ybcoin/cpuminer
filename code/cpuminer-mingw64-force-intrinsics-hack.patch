@@ -1,0 +1,21 @@
+--- cpuminer-orig/code/scrypt-jane-portable-x86.h	2013-06-08 13:24:40.000000000 +0300
++++ cpuminer/code/scrypt-jane-portable-x86.h	2013-06-08 22:08:51.000000000 +0300
+@@ -59,6 +59,11 @@
+ 	#if defined(__AVX__)
+ 		#define X86_INTRINSIC_AVX
+ 	#endif
++
++	/* HACK - I want to use CPU_X86_FORCE_INTRINSICS with mingw64 so these need to be undefined - mikaelh */
++	#undef X86_64ASM_SSSE3
++	#undef X86_64ASM_AVX
++	#undef X86_64ASM_SSE2
+ #endif
+ 
+ /* only use simd on windows (or SSE2 on gcc)! */
+@@ -371,4 +376,4 @@
+ 	#endif
+ #endif
+ 
+-#endif /* defined(CPU_X86) || defined(CPU_X86_64) */
+\ No newline at end of file
++#endif /* defined(CPU_X86) || defined(CPU_X86_64) */

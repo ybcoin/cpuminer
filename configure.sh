@@ -1,0 +1,1 @@
+ CPPFLAGS=" -DCURL_STATICCLIB -pipe -DCPU_X86_FORCE_INTRINSICS -O3" ./configure --host=x86_64-w64-mingw32
